@@ -8,6 +8,7 @@ export class TodoFormComponent {
     this.form = fb.group({
       name: ['', Validators.required],
       email: [''],
+      password: ['', Validators.compose([Validators.required, Validators.minLength(6)])]
     });
   }
 }
