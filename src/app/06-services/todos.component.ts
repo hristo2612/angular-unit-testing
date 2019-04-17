@@ -2,7 +2,7 @@
 import { TodoService } from './todo.service'
 
 export class TodosComponent { 
-  todos: any;
+  todos: any = [];
   message;
 
   constructor(private service: TodoService) {}
